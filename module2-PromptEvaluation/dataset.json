@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Extract the AWS region from an S3 bucket URL like 's3://my-bucket.us-west-2.amazonaws.com/key'",
+    "format": "regex"
+  },
+  {
+    "task": "Create a JSON CloudFormation template that defines an IAM role with basic EC2 permissions",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that takes an AWS access key ID and returns True if it has the correct format",
+    "format": "python"
+  }
+]
