@@ -1,14 +1,14 @@
 [
   {
-    "task": "Extract the AWS region from an S3 bucket URL like 's3://my-bucket.us-west-2.amazonaws.com/key'",
+    "task": "Parse an AWS S3 object key to extract the bucket name and file path from an S3 URI like 's3://my-bucket/path/to/file.txt'",
     "format": "regex"
   },
   {
-    "task": "Create a JSON CloudFormation template that defines an IAM role with basic EC2 permissions",
+    "task": "Create a JSON CloudFormation template snippet that defines an IAM role with a trust policy allowing EC2 instances to assume it",
     "format": "json"
   },
   {
-    "task": "Write a Python function that takes an AWS access key ID and returns True if it has the correct format",
+    "task": "Write a Python function that takes an AWS DynamoDB item (as a dictionary with type descriptors) and converts it to a plain Python dictionary",
     "format": "python"
   }
 ]
