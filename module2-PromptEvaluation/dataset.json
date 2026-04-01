@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 object key to extract the bucket name and file path from an S3 URI like 's3://my-bucket/path/to/file.txt'",
-    "format": "regex"
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message using regex",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly capture three groups: timestamp (ISO 8601 format), log level (DEBUG, INFO, WARN, ERROR), and the remaining message text. Should handle log entries like '2024-01-15T10:30:45Z [INFO] User login successful'"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an IAM role with a trust policy allowing EC2 instances to assume it",
-    "format": "json"
+    "task": "Write a Python function that takes an AWS S3 object key path and returns the bucket name, folder structure, and file name as separate components",
+    "format": "python",
+    "solution_criteria": "Function should accept a string like 's3://my-bucket/logs/2024/01/app.log' or 'my-bucket/logs/2024/01/app.log' and return a dictionary with keys: bucket, folder_path, and filename. Should handle edge cases like missing folders or trailing slashes"
   },
   {
-    "task": "Write a Python function that takes an AWS DynamoDB item (as a dictionary with type descriptors) and converts it to a plain Python dictionary",
-    "format": "python"
+    "task": "Create a JSON configuration object for an AWS Lambda environment that defines variables for database connection, API endpoints, and feature flags",
+    "format": "json",
+    "solution_criteria": "JSON should include nested structure with environment variables organized by category (database, api, features). Should contain realistic AWS-related variable names and placeholder values. Must be valid, properly formatted JSON"
   }
 ]
